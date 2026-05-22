@@ -23,14 +23,11 @@ function getSettingsPath() {
         path.join(appRoot, "settings.json"),
         path.join(appRoot, "resources", "settings.json"),
         process.resourcesPath ? path.join(process.resourcesPath, "settings.json") : null,
+        path.join(__dirname, "../../../settings.json"), // Multi-level up dev
         path.join(__dirname, "../../settings.json"),
         path.join(process.cwd(), "settings.json")
     ].filter(Boolean);
-
-    for (const p of possibleSettings) {
-        if (fs.existsSync(p)) return p;
-    }
-    return null;
+    ...
 }
 
 let lastLoggedDataPath = null;
@@ -52,9 +49,10 @@ function loadSettings() {
 function getDataDir() {
     const settings = loadSettings();
     const settingsPath = getSettingsPath();
+    const appRoot = process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(process.execPath);
 
-    // Default to internal data folder if no settings found
-    let dataPath = path.join(process.env.PORTABLE_EXECUTABLE_DIR || __dirname, "../../data");
+    // Default to "data" folder in the app root
+    let dataPath = path.join(appRoot, "data");
 
     if (settings.dataFolderPath && settingsPath) {
         if (path.isAbsolute(settings.dataFolderPath)) {
