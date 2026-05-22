@@ -31,8 +31,7 @@
             "settings.json"
         ],
         "win": {
-            "target": "portable",
-            "icon": "frontend/public/logo.svg"
+            "target": "portable"
         },
         "extraResources": [
             "settings.json"
