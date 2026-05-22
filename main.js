@@ -1,24 +1,24 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const { fork } = require('child_process');
+const { spawn } = require('child_process');
 const fs = require('fs');
 
 let mainWindow;
 let backendProcess;
 
+const isDev = !app.isPackaged;
+
 function createWindow() {
     mainWindow = new BrowserWindow({
-        width: 1200,
+        width: 1280,
         height: 800,
         title: "AMS Solution",
         icon: path.join(__dirname, 'frontend/public/logo.svg'),
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false
+            nodeIntegration: false,
+            contextIsolation: true
         }
     });
-
-    const isDev = !app.isPackaged;
 
     if (isDev) {
         mainWindow.loadURL('http://localhost:5173');
@@ -31,50 +31,41 @@ function createWindow() {
     });
 }
 
-function ensureSettingsAndData() {
-    // Determine portable directory (where .exe is)
-    const appDir = process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(process.execPath);
-    const settingsPath = path.join(appDir, "settings.json");
-
-    if (!fs.existsSync(settingsPath)) {
-        // Copy default from resources if bundled
-        const defaultSettingsPath = path.join(process.resourcesPath || __dirname, "settings.json");
-        if (fs.existsSync(defaultSettingsPath)) {
-            try {
-                fs.copyFileSync(defaultSettingsPath, settingsPath);
-                console.log(`[Main] Created default settings.json at ${settingsPath}`);
-            } catch (err) {
-                console.error("[Main] Failed to copy default settings:", err);
-            }
-        } else {
-            // Create a minimal default
-            const defaultSettings = {
-                dataFolderPath: "./data",
-                machineName: "AMS-STATION-01"
-            };
-            fs.writeFileSync(settingsPath, JSON.stringify(defaultSettings, null, 2));
-            console.log(`[Main] Created fresh settings.json at ${settingsPath}`);
-        }
-    }
-
-    return appDir;
-}
-
 function startBackend() {
-    const appDir = ensureSettingsAndData();
-    const backendPath = path.join(__dirname, 'backend/server.js');
+    // Resolve paths
+    const appRoot = isDev ? __dirname : path.dirname(app.getPath("exe"));
+    const backendPath = isDev
+        ? path.join(__dirname, 'backend')
+        : path.join(__dirname, 'backend').replace('app.asar', 'app.asar.unpacked');
 
-    backendProcess = fork(backendPath, [], {
-        env: {
-            ...process.env,
-            PORTABLE_EXECUTABLE_DIR: appDir,
-            PORT: 5000
-        }
-    });
+    const serverScript = path.join(backendPath, 'server.js');
+    const settingsPath = path.join(appRoot, "settings.json");
 
-    backendProcess.on('message', (msg) => {
-        console.log('Backend message:', msg);
-    });
+    // Pass environment to backend
+    const env = {
+        ...process.env,
+        SETTINGS_PATH: settingsPath,
+        ELECTRON_RUN_AS_NODE: "1",
+        PORT: 5000
+    };
+
+    console.log(`[Main] Launching backend: ${serverScript}`);
+    console.log(`[Main] Settings path: ${settingsPath}`);
+
+    try {
+        backendProcess = spawn(process.execPath, [serverScript], {
+            env,
+            cwd: backendPath
+        });
+
+        backendProcess.stdout.on('data', (data) => console.log(`[Backend STDOUT]: ${data}`));
+        backendProcess.stderr.on('data', (data) => console.error(`[Backend STDERR]: ${data}`));
+
+        backendProcess.on('error', (err) => console.error(`[Backend Spawn Error]:`, err));
+        backendProcess.on('close', (code) => console.log(`[Backend Exit] code: ${code}`));
+    } catch (err) {
+        console.error("[Main] Failed to spawn backend:", err);
+    }
 }
 
 app.on('ready', () => {

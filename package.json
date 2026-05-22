@@ -20,6 +20,10 @@
     "build": {
         "appId": "com.ams.solution",
         "productName": "AMS Solution",
+        "asar": true,
+        "asarUnpack": [
+            "backend/**/*"
+        ],
         "directories": {
             "output": "dist"
         },
@@ -30,11 +34,25 @@
             "frontend/dist/**/*",
             "settings.json"
         ],
+        "extraFiles": [
+            "settings.json",
+            {
+                "from": "data",
+                "to": "data",
+                "filter": [
+                    "**/*"
+                ]
+            }
+        ],
         "win": {
-            "target": "portable"
+            "target": [
+                "nsis",
+                "portable"
+            ]
         },
-        "extraResources": [
-            "settings.json"
-        ]
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true
+        }
     }
 }
