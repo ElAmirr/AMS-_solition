@@ -3,43 +3,27 @@ const path = require('path');
 
 // Helper to find the settings file
 function getSettingsPath() {
-    // Priority 1: Persistent User Data (Sync'd from Electron)
+    // Priority 1: Next to EXE (Portable Mode)
+    const portableDir = process.env.PORTABLE_EXECUTABLE_DIR;
+    if (portableDir) {
+        const portablePath = path.join(portableDir, "settings.json");
+        if (fs.existsSync(portablePath)) return portablePath;
+    }
+
+    // Priority 2: Persistent User Data
     const userDataPath = process.env.USER_DATA_PATH;
     if (userDataPath) {
         const persistentPath = path.join(userDataPath, "settings.json");
-
-        // If persistent version doesn't exist yet, try to migrate from legacy/resources
-        if (!fs.existsSync(persistentPath)) {
-            const legacyPath = getLegacySettingsPath();
-            if (legacyPath) {
-                try {
-                    console.log(`[Config] Migrating settings from ${legacyPath} to ${persistentPath}`);
-                    if (!fs.existsSync(userDataPath)) {
-                        fs.mkdirSync(userDataPath, { recursive: true });
-                    }
-                    fs.copyFileSync(legacyPath, persistentPath);
-                } catch (err) {
-                    console.error("[Config] Migration failed:", err);
-                }
-            }
-        }
-
-        // If it exists now, return it
         if (fs.existsSync(persistentPath)) return persistentPath;
     }
 
-    // Priority 2: Fallback to local/resources
-    return getLegacySettingsPath();
-}
-
-function getLegacySettingsPath() {
+    // Priority 3: Fallback to local/resources
     const appRoot = process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(process.execPath);
-
     const possibleSettings = [
-        path.join(appRoot, "settings.json"), // Next to .exe
-        path.join(appRoot, "resources", "settings.json"), // In resources
+        path.join(appRoot, "settings.json"),
+        path.join(appRoot, "resources", "settings.json"),
         process.resourcesPath ? path.join(process.resourcesPath, "settings.json") : null,
-        path.join(__dirname, "../../settings.json"), // Dev
+        path.join(__dirname, "../../settings.json"),
         path.join(process.cwd(), "settings.json")
     ].filter(Boolean);
 
@@ -53,9 +37,7 @@ let lastLoggedDataPath = null;
 
 function loadSettings() {
     const settingsPath = getSettingsPath();
-    if (!settingsPath) {
-        return {};
-    }
+    if (!settingsPath) return {};
 
     try {
         const content = fs.readFileSync(settingsPath, "utf-8");
@@ -72,10 +54,9 @@ function getDataDir() {
     const settingsPath = getSettingsPath();
 
     // Default to internal data folder if no settings found
-    let dataPath = path.join(__dirname, "../../data");
+    let dataPath = path.join(process.env.PORTABLE_EXECUTABLE_DIR || __dirname, "../../data");
 
     if (settings.dataFolderPath && settingsPath) {
-        // If path is absolute, use it. If relative, resolve relative to settings file.
         if (path.isAbsolute(settings.dataFolderPath)) {
             dataPath = settings.dataFolderPath;
         } else {
@@ -86,6 +67,24 @@ function getDataDir() {
     if (dataPath !== lastLoggedDataPath) {
         console.log(`[Config] Data Path active: ${dataPath}`);
         lastLoggedDataPath = dataPath;
+    }
+
+    // Ensure data directory exists
+    if (!fs.existsSync(dataPath)) {
+        fs.mkdirSync(dataPath, { recursive: true });
+    }
+
+    // Initialize default users if users.json is missing or empty
+    const usersPath = path.join(dataPath, 'users.json');
+    if (!fs.existsSync(usersPath)) {
+        const defaultUsers = [
+            { user_id: 1, user_name: 'admin', password: '123', role: 'ADMIN', full_name: 'Administrator' },
+            { user_id: 2, user_name: 'supervisor', password: '123', role: 'SUPERVISOR', full_name: 'Supervisor' },
+            { user_id: 3, user_name: 'process', password: '123', role: 'PROCESS', full_name: 'Process Team' },
+            { user_id: 4, user_name: 'manager', password: '123', role: 'MANAGER', full_name: 'Plant Manager' }
+        ];
+        fs.writeFileSync(usersPath, JSON.stringify(defaultUsers, null, 2));
+        console.log(`[Config] Initialized default users at ${usersPath}`);
     }
 
     return dataPath;

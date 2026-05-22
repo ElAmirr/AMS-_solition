@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const { fork } = require('child_process');
 const fs = require('fs');
@@ -18,8 +18,6 @@ function createWindow() {
         }
     });
 
-    // In production, load the built index.html
-    // In development, you might want to load localhost:5173
     const isDev = !app.isPackaged;
 
     if (isDev) {
@@ -33,17 +31,44 @@ function createWindow() {
     });
 }
 
-function startBackend() {
-    const backendPath = path.join(__dirname, 'backend/server.js');
+function ensureSettingsAndData() {
+    // Determine portable directory (where .exe is)
+    const appDir = process.env.PORTABLE_EXECUTABLE_DIR || path.dirname(process.execPath);
+    const settingsPath = path.join(appDir, "settings.json");
 
-    // Set USER_DATA_PATH for the backend to find settings.json
-    const userDataPath = app.getPath('userData');
+    if (!fs.existsSync(settingsPath)) {
+        // Copy default from resources if bundled
+        const defaultSettingsPath = path.join(process.resourcesPath || __dirname, "settings.json");
+        if (fs.existsSync(defaultSettingsPath)) {
+            try {
+                fs.copyFileSync(defaultSettingsPath, settingsPath);
+                console.log(`[Main] Created default settings.json at ${settingsPath}`);
+            } catch (err) {
+                console.error("[Main] Failed to copy default settings:", err);
+            }
+        } else {
+            // Create a minimal default
+            const defaultSettings = {
+                dataFolderPath: "./data",
+                machineName: "AMS-STATION-01"
+            };
+            fs.writeFileSync(settingsPath, JSON.stringify(defaultSettings, null, 2));
+            console.log(`[Main] Created fresh settings.json at ${settingsPath}`);
+        }
+    }
+
+    return appDir;
+}
+
+function startBackend() {
+    const appDir = ensureSettingsAndData();
+    const backendPath = path.join(__dirname, 'backend/server.js');
 
     backendProcess = fork(backendPath, [], {
         env: {
             ...process.env,
-            USER_DATA_PATH: userDataPath,
-            PORT: 5000 // Ensure it matches frontend API calls
+            PORTABLE_EXECUTABLE_DIR: appDir,
+            PORT: 5000
         }
     });
 
