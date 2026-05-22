@@ -1,0 +1,41 @@
+{
+    "name": "ams-solution",
+    "version": "1.0.0",
+    "description": "AMS - Intervention Management System",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dist": "electron-builder",
+        "app:build": "npm run build --prefix frontend && npm run dist"
+    },
+    "author": "Antigravity",
+    "license": "ISC",
+    "dependencies": {
+        "electron-is-dev": "^2.0.0"
+    },
+    "devDependencies": {
+        "electron": "^31.3.1",
+        "electron-builder": "^24.13.3"
+    },
+    "build": {
+        "appId": "com.ams.solution",
+        "productName": "AMS Solution",
+        "directories": {
+            "output": "dist"
+        },
+        "files": [
+            "main.js",
+            "package.json",
+            "backend/**/*",
+            "frontend/dist/**/*",
+            "settings.json"
+        ],
+        "win": {
+            "target": "portable",
+            "icon": "frontend/public/logo.svg"
+        },
+        "extraResources": [
+            "settings.json"
+        ]
+    }
+}

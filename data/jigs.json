@@ -1,0 +1,672 @@
+[
+  {
+    "jig_id": 6,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAR 60-001",
+    "program": "ABSENT"
+  },
+  {
+    "jig_id": 7,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAR 60-002",
+    "program": "U00019"
+  },
+  {
+    "jig_id": 8,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAR 60-003",
+    "program": "U00020"
+  },
+  {
+    "jig_id": 9,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAR 40-001",
+    "program": "U00021"
+  },
+  {
+    "jig_id": 10,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAR 40-002",
+    "program": "U00022"
+  },
+  {
+    "jig_id": 11,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAR RH-002",
+    "program": "U00026"
+  },
+  {
+    "jig_id": 12,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAR RH-001",
+    "program": "U00025"
+  },
+  {
+    "jig_id": 15,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAV-001",
+    "program": "U00027"
+  },
+  {
+    "jig_id": 16,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAV-002",
+    "program": "U00028"
+  },
+  {
+    "jig_id": 17,
+    "jig_identification": "SEAT NEO MP23 -BASIS-DAV-003",
+    "program": "U00029"
+  },
+  {
+    "jig_id": 18,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-001",
+    "program": "U00030"
+  },
+  {
+    "jig_id": 19,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-002",
+    "program": "U00031"
+  },
+  {
+    "jig_id": 20,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-003",
+    "program": "U00032"
+  },
+  {
+    "jig_id": 21,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-004",
+    "program": "U00033"
+  },
+  {
+    "jig_id": 22,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-005",
+    "program": "U00034"
+  },
+  {
+    "jig_id": 23,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-006",
+    "program": "U00035"
+  },
+  {
+    "jig_id": 24,
+    "jig_identification": "SEAT NEO MP23 -BASIS-CAV-007",
+    "program": "U00311"
+  },
+  {
+    "jig_id": 25,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 60-001",
+    "program": "U00119"
+  },
+  {
+    "jig_id": 26,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 60-002",
+    "program": "U00119"
+  },
+  {
+    "jig_id": 27,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 60-003",
+    "program": "U00022"
+  },
+  {
+    "jig_id": 28,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 40-001",
+    "program": "U00120"
+  },
+  {
+    "jig_id": 29,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 40-002",
+    "program": "U00120"
+  },
+  {
+    "jig_id": 30,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAR 40-003",
+    "program": "U00021"
+  },
+  {
+    "jig_id": 31,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR RH-001",
+    "program": "U00007"
+  },
+  {
+    "jig_id": 32,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR RH-002",
+    "program": "U00117"
+  },
+  {
+    "jig_id": 33,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR RH-003",
+    "program": "U00117"
+  },
+  {
+    "jig_id": 34,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR LH-001",
+    "program": "U00018"
+  },
+  {
+    "jig_id": 35,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR LH-002",
+    "program": "U00118"
+  },
+  {
+    "jig_id": 36,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR LH-003",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 37,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAR LH-004",
+    "program": "U00051"
+  },
+  {
+    "jig_id": 38,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAV-001",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 39,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAV-003",
+    "program": "U00416"
+  },
+  {
+    "jig_id": 40,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-DAV-004",
+    "program": "U00116"
+  },
+  {
+    "jig_id": 41,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAV-001",
+    "program": "U00114"
+  },
+  {
+    "jig_id": 42,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAV-002",
+    "program": "U00014"
+  },
+  {
+    "jig_id": 43,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAV-003",
+    "program": "U00114"
+  },
+  {
+    "jig_id": 44,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAV-004",
+    "program": "U00113"
+  },
+  {
+    "jig_id": 45,
+    "jig_identification": "SEAT NEO MP23 -COMFORT-CAV-005",
+    "program": "U00213"
+  },
+  {
+    "jig_id": 46,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAR 60-001",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 47,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAR 60-002",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 48,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAR 40-001",
+    "program": "U00037"
+  },
+  {
+    "jig_id": 49,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAR 40-002",
+    "program": "U00437"
+  },
+  {
+    "jig_id": 50,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAR 40-003",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 51,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAR RH-001",
+    "program": "U00436"
+  },
+  {
+    "jig_id": 52,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAR LH-001",
+    "program": "U00539"
+  },
+  {
+    "jig_id": 53,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAR LH-002",
+    "program": "U00036"
+  },
+  {
+    "jig_id": 54,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAV-001",
+    "program": "U00531"
+  },
+  {
+    "jig_id": 55,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-DAV-002",
+    "program": "U00532"
+  },
+  {
+    "jig_id": 56,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAV-001",
+    "program": "U00034"
+  },
+  {
+    "jig_id": 57,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAV-002",
+    "program": "U00433"
+  },
+  {
+    "jig_id": 58,
+    "jig_identification": "SEAT NEO MP23 -TOP SPORT-CAV-003",
+    "program": "U00059"
+  },
+  {
+    "jig_id": 59,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAR 60-001",
+    "program": "U00087"
+  },
+  {
+    "jig_id": 60,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAR 40-001",
+    "program": "U00040"
+  },
+  {
+    "jig_id": 61,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAR 40-002",
+    "program": "U00040"
+  },
+  {
+    "jig_id": 62,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-CAR RH-001",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 63,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-CAR LH-001",
+    "program": "U00093"
+  },
+  {
+    "jig_id": 64,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-CAR LH-002",
+    "program": "U00083"
+  },
+  {
+    "jig_id": 65,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAV-001",
+    "program": "U00092"
+  },
+  {
+    "jig_id": 66,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAV-002",
+    "program": "U00067"
+  },
+  {
+    "jig_id": 67,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAV-003",
+    "program": "U00082"
+  },
+  {
+    "jig_id": 68,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-CAV-001",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 69,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-CAV-002",
+    "program": "U00071"
+  },
+  {
+    "jig_id": 71,
+    "jig_identification": "SEAT NEO GTX -TOP SPORT-DAR 60-002",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 75,
+    "jig_identification": "SEAT NEO GTX -BASIS-CAR RH-001",
+    "program": "U00316"
+  },
+  {
+    "jig_id": 76,
+    "jig_identification": "SEAT NEO GTX -BASIS-CAV-002",
+    "program": "U00091"
+  },
+  {
+    "jig_id": 77,
+    "jig_identification": "SEAT NEO GTX -BASIS-CAV-001",
+    "program": "U00029"
+  },
+  {
+    "jig_id": 78,
+    "jig_identification": "SEAT NEO GTX -BASIS-DAR 60-001",
+    "program": "U00097"
+  },
+  {
+    "jig_id": 79,
+    "jig_identification": "SEAT NEO GTX -BASIS-DAR 60-002",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 80,
+    "jig_identification": "SEAT NEO GTX -BASIS-DAV-001",
+    "program": "[object Object]"
+  },
+  {
+    "jig_id": 81,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAR 60-001",
+    "program": "U00064"
+  },
+  {
+    "jig_id": 82,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAR 60-002",
+    "program": "U00650"
+  },
+  {
+    "jig_id": 83,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAR 40-001",
+    "program": "U00063"
+  },
+  {
+    "jig_id": 84,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAR 40-002",
+    "program": "A L\"atelier"
+  },
+  {
+    "jig_id": 85,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAR RH-001",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 86,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAR RH-002",
+    "program": "U00616"
+  },
+  {
+    "jig_id": 87,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAR LH-001",
+    "program": "U00315"
+  },
+  {
+    "jig_id": 88,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAR LH-002",
+    "program": "U00615"
+  },
+  {
+    "jig_id": 89,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAV-001",
+    "program": "U00061"
+  },
+  {
+    "jig_id": 90,
+    "jig_identification": "SEAT NEO -FIRE & ICE-DAV-002",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 91,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAV-001",
+    "program": "U00312"
+  },
+  {
+    "jig_id": 92,
+    "jig_identification": "SEAT NEO -FIRE & ICE-CAV-002",
+    "program": "U00612"
+  },
+  {
+    "jig_id": 93,
+    "jig_identification": "SEAT NEO -MARCY SEAM-DAR 60-001",
+    "program": "U00508"
+  },
+  {
+    "jig_id": 94,
+    "jig_identification": "SEAT NEO -MARCY SEAM-DAR 40-001",
+    "program": "U00507"
+  },
+  {
+    "jig_id": 95,
+    "jig_identification": "SEAT NEO -MARCY SEAM-CAV-002",
+    "program": "U00503"
+  },
+  {
+    "jig_id": 96,
+    "jig_identification": "PPE-SP-CAR-001",
+    "program": "U00092"
+  },
+  {
+    "jig_id": 97,
+    "jig_identification": "PPE-SP-CAR-002",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 98,
+    "jig_identification": "PPE-SP-CAV-001",
+    "program": "U00800"
+  },
+  {
+    "jig_id": 99,
+    "jig_identification": "PPE-SP-DAR-001",
+    "program": "U00052"
+  },
+  {
+    "jig_id": 100,
+    "jig_identification": "PPE-SP-DAR-002",
+    "program": "U00442"
+  },
+  {
+    "jig_id": 101,
+    "jig_identification": "PPE-SP-DAV-001",
+    "program": "U00530"
+  },
+  {
+    "jig_id": 102,
+    "jig_identification": "PPE-SP-DAV-002",
+    "program": "U00005"
+  },
+  {
+    "jig_id": 103,
+    "jig_identification": "PPE-SK-CAV-001",
+    "program": "U00504"
+  },
+  {
+    "jig_id": 104,
+    "jig_identification": "PPE-SK-DAR-001",
+    "program": "U00441"
+  },
+  {
+    "jig_id": 105,
+    "jig_identification": "PPE-SK-DAV-001",
+    "program": "JIG ABSENT"
+  },
+  {
+    "jig_id": 106,
+    "jig_identification": "PPE-SK-DAV-002",
+    "program": "U00549"
+  },
+  {
+    "jig_id": 107,
+    "jig_identification": "PPE-NT-CAV-001",
+    "program": "U00536"
+  },
+  {
+    "jig_id": 108,
+    "jig_identification": "PPE-NT-DAR-001",
+    "program": "U00541"
+  },
+  {
+    "jig_id": 109,
+    "jig_identification": "PPE-NT-DAR-002",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 110,
+    "jig_identification": "PPE-NT-DAV-001",
+    "program": "U00510"
+  },
+  {
+    "jig_id": 111,
+    "jig_identification": "PPE-NT-DAV-002",
+    "program": "U00610"
+  },
+  {
+    "jig_id": 112,
+    "jig_identification": "PPE-KLIMA-CAV-001",
+    "program": "U00404"
+  },
+  {
+    "jig_id": 113,
+    "jig_identification": "PPE-KLIMA-DAV-001",
+    "program": "U00550"
+  },
+  {
+    "jig_id": 114,
+    "jig_identification": "PPE -CAV-KS-001",
+    "program": "U00005"
+  },
+  {
+    "jig_id": 115,
+    "jig_identification": "PPE-CAR\\RC LH+RH",
+    "program": "U00157"
+  },
+  {
+    "jig_id": 116,
+    "jig_identification": "PPE-CAR-DN-001",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 117,
+    "jig_identification": "PPE-CAR-DN-002",
+    "program": "NON DISPONIBLE"
+  },
+  {
+    "jig_id": 118,
+    "jig_identification": "PPE-CAR-DN-003",
+    "program": "U00267"
+  },
+  {
+    "jig_id": 119,
+    "jig_identification": "PPE-CAR-DN-004",
+    "program": "U00167"
+  },
+  {
+    "jig_id": 120,
+    "jig_identification": "PPE-CAR-DN-006",
+    "program": "U00158"
+  },
+  {
+    "jig_id": 121,
+    "jig_identification": "PPE-CAR-DN-007",
+    "program": "U00158"
+  },
+  {
+    "jig_id": 122,
+    "jig_identification": "PPE-CAR-FN-001",
+    "program": "U00911"
+  },
+  {
+    "jig_id": 123,
+    "jig_identification": "PPE-CAR-FN-003",
+    "program": "U00068"
+  },
+  {
+    "jig_id": 124,
+    "jig_identification": "PPE-CAR-FN-004",
+    "program": "U00159"
+  },
+  {
+    "jig_id": 125,
+    "jig_identification": "PPE-CAR-KS-001",
+    "program": "U00927"
+  },
+  {
+    "jig_id": 126,
+    "jig_identification": "PPE-CAV-DN-001",
+    "program": "U00074"
+  },
+  {
+    "jig_id": 127,
+    "jig_identification": "PPE-CAV-DN-003",
+    "program": "U00174"
+  },
+  {
+    "jig_id": 128,
+    "jig_identification": "PPE-CAV-FN-001",
+    "program": "U00990"
+  },
+  {
+    "jig_id": 129,
+    "jig_identification": "PPE-CAV-FN-002",
+    "program": "U00990"
+  },
+  {
+    "jig_id": 130,
+    "jig_identification": "PPE-CAV-FN-003",
+    "program": "U00063"
+  },
+  {
+    "jig_id": 131,
+    "jig_identification": "PPE-CAV-FN-004",
+    "program": "U00189"
+  },
+  {
+    "jig_id": 132,
+    "jig_identification": "PPE-DAR-DN-001",
+    "program": "U00097"
+  },
+  {
+    "jig_id": 133,
+    "jig_identification": "PPE-DAR-DN-005",
+    "program": "U00155"
+  },
+  {
+    "jig_id": 134,
+    "jig_identification": "PPE-DAR-FN-002",
+    "program": "U00066"
+  },
+  {
+    "jig_id": 135,
+    "jig_identification": "PPE-DAR-FN-003",
+    "program": "U00197"
+  },
+  {
+    "jig_id": 136,
+    "jig_identification": "PPE-DAR-KS-001",
+    "program": "U00928"
+  },
+  {
+    "jig_id": 137,
+    "jig_identification": "PPE-DAV-DN-002",
+    "program": "U00059"
+  },
+  {
+    "jig_id": 138,
+    "jig_identification": "PPE-DAV-DN-004",
+    "program": "U00010"
+  },
+  {
+    "jig_id": 139,
+    "jig_identification": "PPE-DAV-DN-005",
+    "program": "U00163"
+  },
+  {
+    "jig_id": 140,
+    "jig_identification": "PPE-DAV-DN-006",
+    "program": "U00163"
+  },
+  {
+    "jig_id": 141,
+    "jig_identification": "PPE-DAV-FN-001",
+    "program": "U00060"
+  },
+  {
+    "jig_id": 142,
+    "jig_identification": "PPE-DAV-FN-003",
+    "program": "U00198"
+  },
+  {
+    "jig_id": 143,
+    "jig_identification": "PPE-DAV-FN-004",
+    "program": "U00050"
+  },
+  {
+    "jig_id": 144,
+    "jig_identification": "PPE-DAV-KS-001",
+    "program": "U00926"
+  },
+  {
+    "jig_id": 145,
+    "jig_identification": "PPE-DAV-KS-002",
+    "program": "U00936"
+  }
+]

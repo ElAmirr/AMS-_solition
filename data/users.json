@@ -1,0 +1,38 @@
+[
+  {
+    "user_id": 3,
+    "user_name": "hassen",
+    "password": "123456",
+    "role": "PROCESS"
+  },
+  {
+    "user_id": 4,
+    "user_name": "ala",
+    "password": "123456",
+    "role": "SUPERVISOR"
+  },
+  {
+    "user_id": 5,
+    "user_name": "admin",
+    "password": "123456",
+    "role": "ADMIN"
+  },
+  {
+    "user_id": 6,
+    "user_name": "hadhemi",
+    "password": "123456",
+    "role": "SUPERVISOR"
+  },
+  {
+    "user_id": 7,
+    "user_name": "amir",
+    "password": "112233",
+    "role": "PROCESS"
+  },
+  {
+    "user_id": 8,
+    "user_name": "manager",
+    "password": "123456",
+    "role": "MANAGER"
+  }
+]

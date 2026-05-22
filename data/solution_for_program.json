@@ -1,0 +1,26 @@
+[
+  {
+    "solution_for_program_id": 4,
+    "solution_for_program_label": "Deplacer tout le pattren a droite"
+  },
+  {
+    "solution_for_program_id": 5,
+    "solution_for_program_label": "Deplacer tout le pattren a gauche"
+  },
+  {
+    "solution_for_program_id": 6,
+    "solution_for_program_label": "Deplacer tout le pattren en bas"
+  },
+  {
+    "solution_for_program_id": 7,
+    "solution_for_program_label": "Deplacer tout le pattren en haut "
+  },
+  {
+    "solution_for_program_id": 8,
+    "solution_for_program_label": "ajustement de symetrie de pattren"
+  },
+  {
+    "solution_for_program_id": 9,
+    "solution_for_program_label": "ajustement du point d'arret"
+  }
+]

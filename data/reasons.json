@@ -1,0 +1,157 @@
+[
+  {
+    "reason_id": 25,
+    "reason_label": "Jeu dans les accroches",
+    "category": "Accroche"
+  },
+  {
+    "reason_id": 30,
+    "reason_label": "non centré",
+    "category": "Baguette centrale"
+  },
+  {
+    "reason_id": 6,
+    "reason_label": "Irregulière",
+    "category": "Couture"
+  },
+  {
+    "reason_id": 24,
+    "reason_label": "Nombre de point non conforme",
+    "category": "Couture"
+  },
+  {
+    "reason_id": 22,
+    "reason_label": "Point cassé ",
+    "category": "Couture"
+  },
+  {
+    "reason_id": 7,
+    "reason_label": "Vitesse non conforme",
+    "category": "Couture"
+  },
+  {
+    "reason_id": 3,
+    "reason_label": "Décalé à droite",
+    "category": "Pattern"
+  },
+  {
+    "reason_id": 2,
+    "reason_label": "Décalé à gauche",
+    "category": "Pattern"
+  },
+  {
+    "reason_id": 4,
+    "reason_label": "Décalé en bas",
+    "category": "Pattern"
+  },
+  {
+    "reason_id": 5,
+    "reason_label": "Décalé en haut",
+    "category": "Pattern"
+  },
+  {
+    "reason_id": 29,
+    "reason_label": "Mal fixé",
+    "category": "Pion"
+  },
+  {
+    "reason_id": 26,
+    "reason_label": "Manquants",
+    "category": "Pion"
+  },
+  {
+    "reason_id": 20,
+    "reason_label": "Lachée",
+    "category": "Point d'arrêt"
+  },
+  {
+    "reason_id": 21,
+    "reason_label": "Très renforcer",
+    "category": "Point d'arrêt"
+  },
+  {
+    "reason_id": 19,
+    "reason_label": "A droite",
+    "category": "Point d'arrêt entrant"
+  },
+  {
+    "reason_id": 18,
+    "reason_label": "A gauche",
+    "category": "Point d'arrêt entrant"
+  },
+  {
+    "reason_id": 17,
+    "reason_label": "En bas",
+    "category": "Point d'arrêt entrant"
+  },
+  {
+    "reason_id": 16,
+    "reason_label": "En haut",
+    "category": "Point d'arrêt entrant"
+  },
+  {
+    "reason_id": 15,
+    "reason_label": "A droite",
+    "category": "Point d'arrêt sortant"
+  },
+  {
+    "reason_id": 14,
+    "reason_label": "A gauche",
+    "category": "Point d'arrêt sortant"
+  },
+  {
+    "reason_id": 13,
+    "reason_label": "En bas",
+    "category": "Point d'arrêt sortant"
+  },
+  {
+    "reason_id": 12,
+    "reason_label": "En haut",
+    "category": "Point d'arrêt sortant"
+  },
+  {
+    "reason_id": 31,
+    "reason_label": "A droite",
+    "category": "Symétrie"
+  },
+  {
+    "reason_id": 1,
+    "reason_label": "A gauche",
+    "category": "Symétrie"
+  },
+  {
+    "reason_id": 32,
+    "reason_label": "En haut",
+    "category": "Symétrie"
+  },
+  {
+    "reason_id": 33,
+    "reason_label": "En bas",
+    "category": "Symétrie"
+  },
+  {
+    "reason_id": 11,
+    "reason_label": "A droite",
+    "category": "Talon"
+  },
+  {
+    "reason_id": 10,
+    "reason_label": "A gauche",
+    "category": "Talon"
+  },
+  {
+    "reason_id": 8,
+    "reason_label": "En bas",
+    "category": "Talon"
+  },
+  {
+    "reason_id": 9,
+    "reason_label": "En haut",
+    "category": "Talon"
+  },
+  {
+    "reason_id": 34,
+    "reason_label": "Rotation",
+    "category": "Pied"
+  }
+]
