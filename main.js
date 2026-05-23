@@ -46,7 +46,7 @@ function startBackend() {
         ...process.env,
         SETTINGS_PATH: settingsPath,
         ELECTRON_RUN_AS_NODE: "1",
-        PORT: 5000
+        PORT: 3000
     };
 
     console.log(`[Main] Launching backend: ${serverScript}`);
